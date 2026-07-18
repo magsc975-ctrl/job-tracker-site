@@ -56,7 +56,7 @@
 </style></head><body>
 <div class="wrap">
   <header><h1>Maggie — Job Tracker</h1>
-    <span class="updated">Regenerated Sat Jul 18, 2026 — 08:38 PM &middot; source: github.com/magsc975-ctrl/job-tracker</span></header>
+    <span class="updated">Regenerated Sat Jul 18, 2026 — 09:44 PM &middot; source: github.com/magsc975-ctrl/job-tracker</span></header>
   <div class="tiles">
     <div class="tile"><div class="val" id="tileTotal">0</div><div class="lbl">Total</div></div>
     <div class="tile a"><div class="val" id="tileA">0</div><div class="lbl">Fit A</div></div>
@@ -77,7 +77,7 @@
   <div class="empty-state" id="emptyState" style="display:none">No rows match the current filters.</div>
 </div>
 <script>
-const DATA=[{"Company": "Vert", "Role": "Marketing Associate", "Fit": "A", "Sheet": "Brand Content", "Category": "social", "Location": "NYC", "Remote": "Onsite", "Seniority": "Entry level", "Comp": "$85000-$120000", "Posted": "2026-02-05", "Status": "", "Apply": "https://jobs.weekday.works/vert-marketing-associate"}, {"Company": "Petra Labs", "Role": "Growth & Marketing", "Fit": "A", "Sheet": "Growth", "Category": "growth", "Location": "NYC", "Remote": "Onsite", "Seniority": "Entry level", "Comp": "Competitive + equity", "Posted": "2026-04-29", "Status": "", "Apply": "https://jobs.ashbyhq.com/petra-labs/8eb1abd1-1de6-4559-8110-6338e6a345f5"}], STATS={"total": 2, "fitA": 2, "fitB": 0, "fitC": 0, "remote": 0, "applied": 0}, CFG={"columns": ["Company", "Role", "Fit", "Sheet", "Category", "Location", "Remote", "Seniority", "Comp", "Posted", "Status", "Apply"], "fitCol": "Fit", "remoteCol": "Remote", "statusCol": "Status", "searchCols": ["Company", "Role"]};
+const DATA=[{"Company": "Vert", "Role": "Marketing Associate", "Fit": "A", "Sheet": "Brand Content", "Category": "social", "Location": "NYC", "Remote": "Onsite", "Seniority": "Entry level", "Comp": "$85000-$120000", "Posted": "2026-02-05", "Status": "", "Apply": "https://jobs.weekday.works/vert-marketing-associate"}, {"Company": "Petra Labs", "Role": "Growth & Marketing", "Fit": "A", "Sheet": "Growth", "Category": "growth", "Location": "NYC", "Remote": "Onsite", "Seniority": "Entry level", "Comp": "Competitive + equity", "Posted": "2026-04-29", "Status": "", "Apply": "https://jobs.ashbyhq.com/petra-labs/8eb1abd1-1de6-4559-8110-6338e6a345f5"}, {"Company": "Actively AI", "Role": "Growth Marketing Associate", "Fit": "B", "Sheet": "Growth", "Category": "growth", "Location": "NYC", "Remote": "Onsite", "Seniority": "Entry level", "Comp": "$80000-$110000", "Posted": "2026-07-18", "Status": "", "Apply": "https://www.indeed.com/viewjob?jk=b47d0d1f0afc0a19"}], STATS={"total": 3, "fitA": 2, "fitB": 1, "fitC": 0, "remote": 0, "applied": 0}, CFG={"columns": ["Company", "Role", "Fit", "Sheet", "Category", "Location", "Remote", "Seniority", "Comp", "Posted", "Status", "Apply"], "fitCol": "Fit", "remoteCol": "Remote", "statusCol": "Status", "searchCols": ["Company", "Role"]};
 const ONSITE=new Set(["","onsite","on-site","in-office","in office","no","n/a"]);
 const isRemote=r=>!ONSITE.has(((r[CFG.remoteCol]||"")+"").trim().toLowerCase());
 tileTotal.textContent=STATS.total; tileA.textContent=STATS.fitA; tileB.textContent=STATS.fitB;
